@@ -16,6 +16,7 @@
 #define SPLIT_POINTING_ENABLE     // Transmitting the pointing device status to the master side
 #define POINTING_DEVICE_RIGHT     // Pointing device on the right side (Required - pick one only)
 //#define POINTING_DEVICE_LEFT    // Pointing device on the left side (Required - pick one only)
+#define MOUSE_EXTENDED_REPORT
 
 #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_EFFECT_BREATHING + 2
 #define RGBLIGHT_DEFAULT_HUE 152
