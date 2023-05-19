@@ -11,6 +11,9 @@
 #define SERIAL_USART_SPEED 921600 // Sped :)
 #define USB_VBUS_PIN GP19         // for rp2040 | When USB_VBUS_PIN is not defined, SPLIT_USB_DETECT is used.
 #define EE_HANDS                  // Split handedness via eeprom
+#define MASTER_RIGHT
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 2000
 #define SPLIT_LED_STATE_ENABLE    // Sync host leds (caps lock, ...)
 #define SPLIT_LAYER_STATE_ENABLE  // Enables syncing of the layer state between both halves
 #define SPLIT_POINTING_ENABLE     // Transmitting the pointing device status to the master side
