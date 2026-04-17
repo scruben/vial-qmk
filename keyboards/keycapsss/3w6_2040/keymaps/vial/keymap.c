@@ -54,3 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     // clang-format on
 };
+
+void pointing_device_init_user(void) {
+    pointing_device_set_cpi(6400); // Increase trackball speed (default: 3200)
+}
