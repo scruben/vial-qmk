@@ -78,7 +78,7 @@ i2c_status_t pimoroni_trackball_read(pimoroni_data_t* data) {
     if (debug_mouse) {
         static uint16_t d_timer;
         if (timer_elapsed(d_timer) > PIMORONI_TRACKBALL_DEBUG_INTERVAL) {
-            dprintf("Trackball READ i2c_status_t: %d L: %d R: %d Up: %d D: %d SW: %d\n", last_read_status, data->left, data->right, data->up, data->down, data->click);
+            dprintf("Trackball READ i2c_status_t: %d L: %d R: %d Up: %d D: %d SW: %d\n", last_i2c_status, data->left, data->right, data->up, data->down, data->click);
             d_timer = timer_read();
         }
     }
